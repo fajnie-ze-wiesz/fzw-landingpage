@@ -1,3 +1,11 @@
+:root {
+  --red: #ef420c;
+  --blue: #10305f;
+  --gray: #ebf1f4;
+  --gray-text: #9dabbc;
+}
+
+
 html, body {
     margin: 0;
     padding: 0;
@@ -12,7 +20,7 @@ html, body {
 }
 
 .text-red {
-    color: #ef420c;
+    color: var(--red);
 }
 
 img {
@@ -49,30 +57,30 @@ h1 {
 }
 
 #sekcja1 {
-    background-color: #ef420c;
+    background-color: var(--red);
     color: white;
     padding-bottom: 0;
 }
 
 #sekcja2 {
-    background-color: #ebf1f4;
-    color: #10305f;
+    background-color: var(--gray);
+    color: var(--blue);
     padding-bottom: 0;
 }
 
 #sekcja3 {
     background-color: white;
-    color: #10305f;
+    color: var(--blue);
 }
 
 #sekcja4 {
-    background-color: #ebf1f4;
-    color: #10305f;
+    background-color: var(--gray);
+    color: var(--blue);
 }
 
 a {
     text-decoration: none;
-    color: #10305f;
+    color: var(--blue);
 }
 
 .button {
@@ -80,7 +88,7 @@ a {
     box-sizing: border-box;
     font-size: 75%;
     text-align: center;
-    background: #ef420c;
+    background: var(--red);
     padding: 1em 2em;
     border-radius: 0.5em;
     color: white;
@@ -92,7 +100,7 @@ a {
 
 .button.blue {
     color: white;
-    background: #10305f;
+    background: var(--blue);
 }
 
 .button.opaque-white {
@@ -102,13 +110,13 @@ a {
 
 .button.opaque-blue {
     background: none;
-    color: #10305f;
-    box-shadow: inset 0 0 0 0.15em #10305f;
+    color: var(--blue);
+    box-shadow: inset 0 0 0 0.15em var(--blue);
 }
 
 footer {
     font-size: 80%;
-    color: #9dabbc;
+    color: var(--gray-text);
     text-align: center;
     line-height: 2em;
     margin: 15vmin 0;
@@ -128,7 +136,13 @@ footer {
 }
 
 .sprinkle-rect {
-    
+    border-radius: 20%;
+    border-width: .25em;
+    border-color: #ef420c;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    position: relative;
 }
 
 
@@ -151,7 +165,17 @@ footer {
     }
 
     .sekcja {
-        padding: 7vmin 20vw 0 20vw;
+        padding: 7vmin 15vw 0 15vw;
+    }
+    .sekcja > img {
+        width: 50%;
+        flex-basis: auto;
+        flex-grow: 1;
+    }
+    .sekcja .column {
+        width: 50%;
+        flex-basis: auto;
+        flex-grow: 1;
     }
 }
 
