@@ -6,8 +6,9 @@ html, body {
 }
 
 #logo {
-    width: 8em;
+    width: 4.5em;
     height: auto;
+    margin: .5em;
 }
 
 .text-red {
@@ -32,24 +33,40 @@ h1 {
 
 .sekcja {
     box-sizing: border-box;
-    padding: 7vmin 7vmin 0 7vmin;
+    padding: 7vmin;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     width: 100vw;
+}
+
+.sekcja img {
+}
+
+#sekcja1 > img {
+    align-self: flex-end;
+    width: auto;
 }
 
 #sekcja1 {
     background-color: #ef420c;
     color: white;
+    padding-bottom: 0;
 }
 
 #sekcja2 {
     background-color: #ebf1f4;
     color: #10305f;
+    padding-bottom: 0;
 }
 
 #sekcja3 {
     background-color: white;
+    color: #10305f;
+}
+
+#sekcja4 {
+    background-color: #ebf1f4;
     color: #10305f;
 }
 
@@ -70,7 +87,6 @@ a {
     font-weight: 500;
     letter-spacing: .1em;
     text-transform: uppercase;
-    width: 100%;
     margin: 1em 0;
 }
 
@@ -102,40 +118,26 @@ footer {
     border-radius: 5vmin;
 }
 
-.box {
-    background-color: #ebf1f4;
-    color: #10305f;
-    box-sizing: border-box;
-    padding: 0 7vmin;
-}
-
-.box a {
+#sekcja4 a {
     font-weight: 500;
     line-height: normal;
 }
-
-.question-mark {
-    display: inline-block;
-    border-radius: 100%;
-    background-color: #10305f;
-    color: white;
-    height: 2em;
-    width: 2em;
-    text-align: center;
-    font-weight: 900;
-}
-
 .column {
     display: flex;
     flex-direction: column;
 }
+
+.sprinkle-rect {
+    
+}
+
 
 /* DESKTOP ONLY STYLES */
 @media screen and (min-aspect-ratio: 1/1) {
     body {
         font-size: 2vmin;
     }
-
+    
     #sekcja1 {
         flex-direction: row;
     }
@@ -154,4 +156,8 @@ footer {
 }
 
 /* MOBILE ONLY STYLES */
-@media screen and (max-aspect-ratio: 1/1) {}
+@media screen and (max-aspect-ratio: 1/1) {
+    #sekcja1 {
+        height: 100vh;
+    }
+}
