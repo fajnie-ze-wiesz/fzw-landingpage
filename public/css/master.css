@@ -1,10 +1,9 @@
 :root {
-  --red: #ef420c;
-  --blue: #10305f;
-  --gray: #ebf1f4;
-  --gray-text: #9dabbc;
+    --red: #ef420c;
+    --blue: #10305f;
+    --gray: #ebf1f4;
+    --gray-text: #9dabbc;
 }
-
 
 html, body {
     margin: 0;
@@ -15,7 +14,7 @@ html, body {
 #logo {
     width: 4.5em;
     height: auto;
-    margin: .5em;
+    margin-bottom: 1em;
 }
 
 .text-red {
@@ -24,10 +23,12 @@ html, body {
 
 p {
     font-weight: 400;
-    line-height: 2em;
+    line-height: 1.5em;
+    font-size: 80%;
 }
 
 h1 {
+    font-size: 160%;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
@@ -43,11 +44,9 @@ h1 {
 }
 
 .sekcja img {
-}
-
-#sekcja1 > img {
     align-self: flex-end;
-    width: auto;
+    margin: 0 1em;
+    flex-basis: 115%;
 }
 
 #sekcja1 {
@@ -124,25 +123,65 @@ footer {
     font-weight: 500;
     line-height: normal;
 }
+
 .column {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .sprinkle-rect {
     border-radius: 20%;
     border-width: .25em;
-    border-color: #ef420c;
+    border-color: var(--red);
     border-style: solid;
     width: 1em;
     height: 1em;
     position: relative;
 }
-ol li {
-    margin: 2em 0;
+
+.sprinkle-circle {
+    border-radius: 100%;
+    border-width: .25em;
+    border-color: white;
+    border-style: solid;
+    width: .8em;
+    height: .8em;
+    position: relative;
 }
-ol li::before{
-    font-size: 150%;
+
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+li {
+    font-size: 80%;
+    line-height: 1.5em;
+    margin: 2em 0;
+    counter-increment: item;
+    padding-left: 2em;
+}
+
+li:before {
+    font-size: 80%;
+    font-weight: bold;
+    content: counter(item);
+    background: var(--red);
+    border-radius: 100%;
+    color: white;
+    width: 1.9em;
+    height: auto;
+    margin-left: -3em;
+    margin-right: 1em;
+    text-align: center;
+    display: inline-block;
 }
 
 /* DESKTOP ONLY STYLES */
@@ -150,7 +189,7 @@ ol li::before{
     body {
         font-size: 2vmin;
     }
-    
+
     #sekcja1 {
         flex-direction: row;
     }
@@ -163,40 +202,68 @@ ol li::before{
         flex-direction: row;
     }
 
+    #sekcja2 img {
+        flex-basis: 40%;
+        transform-origin: bottom;
+        transform: scale(1.2);
+    }
+
+    .button+.button {
+        margin-left: 2em;
+    }
+
+    h1 {
+        margin: 0;
+    }
+
     .sekcja {
-        padding: 2.5vmin 15vw 0 15vw;
+        padding: 5vmin 15vw;
     }
-    .sekcja > img {
-        width: 50%;
-        flex-basis: auto;
-        flex-grow: 1;
-    }
+
     .sekcja .column {
-        width: 50%;
         flex-basis: auto;
-        flex-grow: 1;
     }
-    .button {
-        margin: 2em;
+
+    .column {
+        flex-shrink: 1;
+    }
+
+    .column .button {
+        width: 50%;
     }
 }
 
 /* MOBILE ONLY STYLES */
 @media screen and (max-aspect-ratio: 1/1) {
     body {
-        font-size: 4.5vmin;
+        font-size: 5vmin;
     }
+
     #sekcja1 {
-        height: 100vh;
+        min-height: 100vh;
     }
+
+    #sekcja1 h1 {
+        margin: 0;
+    }
+
     img {
         width: 100%;
         height: auto;
+        flex-shrink: 1;
     }
+
     .button {
         width: 100%;
     }
+
+    .row {
+        flex-direction: column;
+    }
+
     ol {
         list-style: none;
+        margin: 0;
+        padding: 0;
     }
 }
