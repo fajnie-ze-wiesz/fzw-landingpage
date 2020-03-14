@@ -44,8 +44,6 @@ h1 {
 }
 
 .sekcja img {
-    align-self: flex-end;
-    margin: 0 1em;
     flex-basis: 115%;
 }
 
@@ -111,8 +109,8 @@ footer {
     font-size: 80%;
     color: var(--gray-text);
     text-align: center;
-    line-height: 2em;
-    margin: 15vmin 0;
+    line-height: 3em;
+    margin: 5vmin 0;
 }
 
 .round {
@@ -159,6 +157,7 @@ footer {
 ol {
     list-style: none;
     counter-reset: item;
+    padding: 0.4em;
 }
 
 li {
@@ -211,6 +210,10 @@ li:before {
     .button+.button {
         margin-left: 2em;
     }
+    .sekcja img {
+        margin: 0 1em;
+        align-self: flex-end;
+    }
 
     h1 {
         margin: 0;
@@ -218,10 +221,6 @@ li:before {
 
     .sekcja {
         padding: 5vmin 15vw;
-    }
-
-    .sekcja .column {
-        flex-basis: auto;
     }
 
     .column {
