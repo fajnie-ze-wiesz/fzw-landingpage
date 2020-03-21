@@ -44,7 +44,7 @@ h1 {
 }
 
 .sekcja img {
-    flex-basis: 115%;
+    /* flex-basis: 115%; */
 }
 
 #sekcja1 {
@@ -202,17 +202,18 @@ li:before {
     }
 
     #sekcja2 img {
-        flex-basis: 40%;
+        /* flex-basis: 40%; */
         transform-origin: bottom;
-        transform: scale(1.2);
+        /* transform: scale(1.2); */
     }
 
-    .button+.button {
+    .button + .button {
         margin-left: 2em;
     }
     .sekcja img {
         margin: 0 1em;
         align-self: flex-end;
+        width: 50%;
     }
 
     h1 {
@@ -224,11 +225,12 @@ li:before {
     }
 
     .column {
-        flex-shrink: 1;
+      width: 50%;
+
     }
 
     .column .button {
-        width: 50%;
+        /* width: 50%; */
     }
 }
 
@@ -249,7 +251,6 @@ li:before {
     img {
         width: 100%;
         height: auto;
-        flex-shrink: 1;
     }
 
     .button {
