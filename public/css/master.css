@@ -27,6 +27,10 @@ p {
     font-size: 80%;
 }
 
+strong {
+  font-weight: 500;
+}
+
 h1 {
     font-size: 160%;
     text-transform: uppercase;
