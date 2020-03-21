@@ -74,6 +74,10 @@ a {
     color: var(--blue);
 }
 
+.buttonContainer {
+  margin-bottom: 2em;
+}
+
 .button {
     display: inline-block;
     box-sizing: border-box;
