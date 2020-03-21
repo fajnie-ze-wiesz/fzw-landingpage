@@ -32,7 +32,7 @@ strong {
 }
 
 h1 {
-    font-size: 160%;
+    font-size: 140%;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
@@ -201,7 +201,7 @@ li:before {
 /* DESKTOP ONLY STYLES */
 @media screen and (min-aspect-ratio: 1/1) {
     body {
-        font-size: 3vmin;
+        font-size: 2.5vmin;
     }
 
     #sekcja1 {
@@ -253,7 +253,7 @@ li:before {
 /* MOBILE ONLY STYLES */
 @media screen and (max-aspect-ratio: 1/1) {
     body {
-        font-size: 7.5vmin;
+        font-size: 6.25vmin;
     }
 
     #sekcja1 {
