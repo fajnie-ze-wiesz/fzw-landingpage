@@ -136,6 +136,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .row {
@@ -221,7 +222,7 @@ li:before {
         margin-left: 2em;
     }
     .sekcja img {
-        margin: 0 1em;
+        /* margin: 0 1em; */
         align-self: flex-end;
         width: 50%;
     }
@@ -236,6 +237,7 @@ li:before {
 
     .column {
       width: 50%;
+      padding: 1em;
 
     }
 
