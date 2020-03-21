@@ -190,7 +190,7 @@ li:before {
 /* DESKTOP ONLY STYLES */
 @media screen and (min-aspect-ratio: 1/1) {
     body {
-        font-size: 2vmin;
+        font-size: 3vmin;
     }
 
     #sekcja1 {
@@ -241,7 +241,7 @@ li:before {
 /* MOBILE ONLY STYLES */
 @media screen and (max-aspect-ratio: 1/1) {
     body {
-        font-size: 5vmin;
+        font-size: 7.5vmin;
     }
 
     #sekcja1 {
