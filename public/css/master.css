@@ -4,11 +4,21 @@
     --gray: #ebf1f4;
     --gray-text: #9dabbc;
 }
+.stroke-red {
+    stroke: var(--red);
+}
+.stroke-blue {
+    stroke: var(--blue);
+}
+.stroke-white {
+    stroke: white;
+}
 
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Rubik';
+    overflow-x: hidden;
 }
 
 #logo {
@@ -23,7 +33,7 @@ html, body {
 
 p {
     font-weight: 400;
-    line-height: 1.5em;
+    line-height: 1.75em;
     font-size: 80%;
 }
 
@@ -32,15 +42,18 @@ strong {
 }
 
 h1 {
-    font-size: 140%;
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
+    margin: 0;
+    font-size: 210%;
+    line-height: 1.1em;
+
 }
 
 .sekcja {
     box-sizing: border-box;
-    padding: 7vmin;
+    padding: 10vmin;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -69,7 +82,7 @@ h1 {
 }
 
 #sekcja4 {
-    background-color: var(--gray);
+    /* background-color: var(--gray); */
     color: var(--blue);
 }
 
@@ -78,7 +91,7 @@ a {
     color: var(--blue);
 }
 
-.buttonContainer {
+.button-container {
   margin-bottom: 2em;
 }
 
@@ -128,7 +141,7 @@ footer {
 }
 
 .round {
-    border-radius: 5vmin;
+    border-radius: 1em;
 }
 
 #sekcja4 a {
@@ -147,26 +160,6 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-}
-
-.sprinkle-rect {
-    border-radius: 20%;
-    border-width: .25em;
-    border-color: var(--red);
-    border-style: solid;
-    width: 1em;
-    height: 1em;
-    position: relative;
-}
-
-.sprinkle-circle {
-    border-radius: 100%;
-    border-width: .25em;
-    border-color: white;
-    border-style: solid;
-    width: .8em;
-    height: .8em;
-    position: relative;
 }
 
 ol {
@@ -201,7 +194,7 @@ li:before {
 /* DESKTOP ONLY STYLES */
 @media screen and (min-aspect-ratio: 1/1) {
     body {
-        font-size: 2.5vmin;
+        font-size: 2.1vmin;
     }
 
     #sekcja1 {
@@ -225,14 +218,10 @@ li:before {
     .button + .button {
         margin-left: 2em;
     }
-    .sekcja img {
+    .sekcja > img {
         /* margin: 0 1em; */
         align-self: flex-end;
         width: 50%;
-    }
-
-    h1 {
-        margin: 0;
     }
 
     .sekcja {
@@ -248,23 +237,28 @@ li:before {
     .column .button {
         /* width: 50%; */
     }
+    .contact-box {
+        box-sizing: content-box;
+        padding: 2em;
+        background-color: var(--gray);
+    }
 }
 
 /* MOBILE ONLY STYLES */
 @media screen and (max-aspect-ratio: 1/1) {
     body {
-        font-size: 6.25vmin;
-    }
-
-    #sekcja1 {
-        min-height: 93vh;
+        font-size: 4vmin;
     }
 
     #sekcja1 h1 {
         margin: 0;
     }
 
-    img {
+    #sekcja4 {
+        background-color: var(--gray);
+    }
+
+    .sekcja img {
         width: 100%;
         height: auto;
     }
