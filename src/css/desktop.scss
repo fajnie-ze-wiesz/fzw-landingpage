@@ -1,0 +1,48 @@
+@media screen and (min-aspect-ratio: 1/1) {
+    body {
+        font-size: 2.1vmin;
+    }
+
+    #sekcja1 {
+        flex-direction: row;
+    }
+
+    #sekcja2 {
+        flex-direction: row-reverse;
+    }
+
+    #sekcja3 {
+        flex-direction: row;
+    }
+
+    #sekcja2 img {
+        /* flex-basis: 40%; */
+        transform-origin: bottom;
+        /* transform: scale(1.2); */
+    }
+
+    .button + .button {
+        margin-left: 2em;
+    }
+    .sekcja > img {
+        /* margin: 0 1em; */
+        align-self: flex-end;
+        width: 50%;
+    }
+
+    .sekcja {
+        padding: 5vmin 15vw;
+    }
+
+    .column {
+      width: 50%;
+      padding: 1em;
+
+    }
+
+    .contact-box {
+        box-sizing: content-box;
+        padding: 2em;
+        background-color: var(--gray);
+    }
+}
