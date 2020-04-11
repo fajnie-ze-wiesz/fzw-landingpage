@@ -2,10 +2,10 @@
   "name": "fzw-landing-page",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.pug",
   "scripts": {
-    "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,10 @@
   },
   "homepage": "https://gitlab.com/fraunos/fzw-landing-page#readme",
   "dependencies": {
+    "jstransformer-markdown-it": "^2.1.0",
     "parcel": "^1.12.4"
+  },
+  "devDependencies": {
+    "pug": "^2.0.4"
   }
 }
