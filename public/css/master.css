@@ -118,11 +118,11 @@ a {
 }
 
 .button.blue:hover, .button.opaque-blue:hover{
-    filter: drop-shadow(16px 16px 0 var(--red));
+    filter: drop-shadow(.5em .5em 0 var(--red));
 }
 
 .button.red:hover, .button.opaque-red:hover, .button.opaque-white:hover{
-    filter: drop-shadow(16px 16px 0 var(--blue));
+    filter: drop-shadow(.5em .5em 0 var(--blue));
 }
 
 .button.blue {
