@@ -1,0 +1,23 @@
+{
+  "name": "fzw-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/fraunos/fzw-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/fraunos/fzw-landing-page/issues"
+  },
+  "homepage": "https://gitlab.com/fraunos/fzw-landing-page#readme",
+  "dependencies": {
+    "parcel": "^1.12.4"
+  }
+}
