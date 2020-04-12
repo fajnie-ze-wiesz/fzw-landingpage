@@ -1,8 +1,18 @@
 @media screen and (min-aspect-ratio: 2/3) {
     body {
-        font-size: 1.2vmax;
+        font-size: calc(.4vmax + 1vmin);
+    }
+    h1 {
+        font-size: 260%;
     }
 
+    h2 {
+        font-size: 170%;
+    }
+
+    h3 {
+        font-size: 130%;
+    }
     #sekcja1 {
         flex-direction: row;
     }
