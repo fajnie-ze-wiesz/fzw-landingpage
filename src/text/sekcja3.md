@@ -1,4 +1,4 @@
-# Poznaj nas!
+## Poznaj nas!
 
 Pomysł stworzenia aplikacji narodził się podczas konkursu Edukaton, który odbył się w Warszawie 16 lutego 2018 r.
 

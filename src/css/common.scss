@@ -43,14 +43,16 @@ strong {
   font-weight: 500;
 }
 
-h1 {
+h1, h2, h3 {
     text-transform: uppercase;
-    font-weight: 700;
     display: inline-block;
-    margin: 0;
-    font-size: 210%;
     line-height: 1.1em;
+    font-weight: 700;
+    margin: 0;
+}
 
+h1 {
+    font-size: 210%;
 }
 
 .sekcja {
