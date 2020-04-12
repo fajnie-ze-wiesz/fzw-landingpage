@@ -20,26 +20,30 @@
 
     #sekcja2 {
         flex-direction: row-reverse;
+        img {
+            transform: scale(1.2);
+            transform-origin: bottom right;
+        }
     }
 
     #sekcja3 {
         flex-direction: row;
     }
 
-    #sekcja2 img {
-        transform-origin: bottom;
-    }
-
     .button + .button {
         margin-left: 2em;
-    }
-    .sekcja > img {
-        align-self: flex-end;
-        width: 50%;
     }
 
     .sekcja {
         padding: 5vmin 15vw;
+
+        & > * + * {
+            margin: 0 3em;
+        }
+        img {
+            align-self: flex-end;
+            width: 50%;
+        }
     }
 
     .column {
