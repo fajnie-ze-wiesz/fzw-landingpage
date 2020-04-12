@@ -13,6 +13,7 @@
     h3 {
         font-size: 130%;
     }
+
     #sekcja1 {
         flex-direction: row;
     }
@@ -26,16 +27,13 @@
     }
 
     #sekcja2 img {
-        /* flex-basis: 40%; */
         transform-origin: bottom;
-        /* transform: scale(1.2); */
     }
 
     .button + .button {
         margin-left: 2em;
     }
     .sekcja > img {
-        /* margin: 0 1em; */
         align-self: flex-end;
         width: 50%;
     }

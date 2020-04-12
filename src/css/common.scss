@@ -21,12 +21,6 @@ html, body {
     overflow-x: hidden;
 }
 
-#logo {
-    width: 4.5em;
-    height: auto;
-    margin-bottom: 1em;
-}
-
 .text-red {
     color: var(--red);
 }
@@ -56,13 +50,22 @@ h1, h2, h3 {
     width: 100%;
 }
 
-.sekcja img {
-    /* flex-basis: 115%; */
+#header {
+    padding-bottom: 0;
+    padding-top: 2em;
+    background-color: var(--red);
+    #logo {
+        align-self: flex-start;
+        width: 4.5em;
+        height: auto;
+        margin-bottom: 1em;
+    }
 }
 
 #sekcja1 {
     background-color: var(--red);
     color: white;
+    padding-top: 0;
     padding-bottom: 0;
 }
 
@@ -85,10 +88,6 @@ h1, h2, h3 {
 a {
     text-decoration: none;
     color: var(--blue);
-}
-
-.button-container {
-  margin-bottom: 2em;
 }
 
 .button {
