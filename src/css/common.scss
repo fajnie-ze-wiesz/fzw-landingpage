@@ -103,22 +103,28 @@ a {
     text-transform: uppercase;
     margin: 1em 0;
     min-width: 15em;
-    -webkit-transition : -webkit-filter 500ms ease-out;
+    transition : 200ms;
 }
 
 
 .button.red {
-  box-shadow: 0 0.3em 1em #EF420C3D;
-  color: white;
-  background: var(--red);
+    box-shadow: 0 0.3em 1em #EF420C3D;
+    color: white;
+    background: var(--red);
 }
 
-.button.blue:hover, .button.opaque-blue:hover{
-    filter: drop-shadow(.5em .5em 0 var(--red));
+.button.blue:hover, .button.red:hover{
+    box-shadow: none;
 }
 
-.button.red:hover, .button.opaque-red:hover, .button.opaque-white:hover{
-    filter: drop-shadow(.5em .5em 0 var(--blue));
+.button.opaque-blue:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.button.opaque-white:hover {
+    background-color: white;
+    color: var(--red);
 }
 
 .button.blue {
@@ -128,13 +134,11 @@ a {
 }
 
 .button.opaque-white {
-    background: var(--red);
     color: white;
     box-shadow: inset 0 0 0 0.15em white;
 }
 
 .button.opaque-blue {
-    background: var(--gray);
     color: var(--blue);
     box-shadow: inset 0 0 0 0.15em var(--blue);
 }
