@@ -81,7 +81,6 @@ h1, h2, h3 {
 }
 
 #sekcja4 {
-    /* background-color: var(--gray); */
     color: var(--blue);
 }
 
@@ -102,7 +101,7 @@ a {
     text-transform: uppercase;
     margin: 1em 0;
     min-width: 15em;
-    transition : 200ms;
+    transition: background 200ms, color 200ms;
 }
 
 
