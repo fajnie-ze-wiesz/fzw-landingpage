@@ -14,7 +14,7 @@ deploy:
     fqdn: fajniezewiesz.pl
     skip-cleanup: true
     keep-history: false
-    target-branch: pages
+    target-branch: gh-pages
     local-dir: dist/
     github-token: $GITHUB_TOKEN
     on:
