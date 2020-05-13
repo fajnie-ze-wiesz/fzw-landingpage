@@ -21,7 +21,6 @@
     }
 
     #sekcja1 {
-        flex-direction: row;
     }
 
     #sekcja2 {
@@ -33,7 +32,6 @@
     }
 
     #sekcja3 {
-        flex-direction: row;
     }
 
     .button + .button {
@@ -42,6 +40,7 @@
 
     .sekcja {
         padding: 5vmin 15vw;
+        flex-direction: row;
 
         img {
             align-self: flex-end;
