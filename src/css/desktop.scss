@@ -1,6 +1,6 @@
 @media screen and (min-aspect-ratio: 2/3) {
     body {
-        font-size: calc(.4vmax + 1vmin);
+        font-size: 18px;
     }
     h1 {
         font-size: 260%;
@@ -25,10 +25,6 @@
 
     #sekcja2 {
         flex-direction: row-reverse;
-        img {
-            transform: scale(1.2);
-            transform-origin: bottom right;
-        }
     }
 
     #sekcja3 {
@@ -37,14 +33,18 @@
         }
     }
 
+    #sekcja4 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
     .button + .button {
         margin-left: 2em;
     }
 
     .sekcja {
-        padding: 5vmin 15vw;
         flex-direction: row;
-
+        padding: 0 calc((100vw - 1160px)/2);
         img {
             align-self: flex-end;
             width: 50%;
@@ -52,8 +52,8 @@
     }
 
     .column {
-      width: 50%;
-      padding: 2em;
+      width: 40%;
+      padding: 128px 0;
     }
 
     .contact-box {
