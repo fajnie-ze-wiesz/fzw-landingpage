@@ -10,15 +10,25 @@ script:
 - npm run build
 deploy:
   - provider: pages
-    repo: fajnie-ze-wiesz/fzw-landingpage
-    fqdn: lp.fajniezewiesz.pl
+    repo: test-fajnie-ze-wiesz/test-lp-fajnie-ze-wiesz.github.io
+    fqdn: test-lp.fajniezewiesz.pl
     skip-cleanup: true
     keep-history: false
-    target-branch: gh-pages
+    target-branch: master
     local-dir: dist/
     github-token: $GITHUB_TOKEN
     on:
       branch: master
+  - provider: pages
+    repo: fajnie-ze-wiesz/lp-fajnie-ze-wiesz.github.io
+    fqdn: lp.fajniezewiesz.pl
+    skip-cleanup: true
+    keep-history: false
+    target-branch: master
+    local-dir: dist/
+    github-token: $GITHUB_TOKEN
+    on:
+      branch: production
 
 notifications:
   email:
