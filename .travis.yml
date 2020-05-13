@@ -10,7 +10,7 @@ script:
 - npm run build
 deploy:
   - provider: pages
-    repo: test-fajnie-ze-wiesz/test-lp-fajnie-ze-wiesz.github.io
+    repo: fajnie-ze-wiesz/test-lp-fajnie-ze-wiesz.github.io
     fqdn: test-lp.fajniezewiesz.pl
     skip-cleanup: true
     keep-history: false
