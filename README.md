@@ -1,1 +1,1 @@
-# Tymczasowe repozytorium landing page dla aplikacji Fajnie, że wiesz!
+# Repozytorium landing page dla aplikacji Fajnie, że wiesz!
