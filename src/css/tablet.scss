@@ -1,4 +1,7 @@
-@media screen and (min-aspect-ratio: 3/2) {
+@media screen and (min-aspect-ratio: 2/3) and (max-aspect-ratio: 3/2) {
+    body {
+        overflow-x: hidden;
+    }
     h1 {
         font-size: 260%;
     }
@@ -17,19 +20,21 @@
         }
     }
 
-    #sekcja2 {
-        flex-direction: row-reverse;
-        img {
-            transform-origin: bottom;
-            transform: scale(1.2);
-        }
+    #sekcja1, #sekcja2 {
         .column {
-            width: 50%;
+            padding-right: 0;
         }
     }
 
     #sekcja3 {
+        flex-direction: column;
+        .column {
+            width: 100%;
+        }
         img {
+            width: 100%;
+            padding: 0 4em;
+            box-sizing: border-box;
             align-self: auto;
         }
     }
@@ -46,21 +51,25 @@
     .sekcja {
         display: flex;
         flex-direction: row;
-        padding: 0 calc((100vw - 1160px)/2);
         img {
             align-self: flex-end;
-            width: 50%;
+            width: 40%;
+            transform-origin: bottom left;
+            transform: scale(2);
+
         }
     }
 
     .column {
-      width: 40%;
-      padding: 128px 0;
+      width: 60%;
+      padding: 4em;
     }
 
     .contact-box {
+        margin: 4em;
         box-sizing: content-box;
         padding: 3em;
         background-color: var(--gray);
     }
+
 }
