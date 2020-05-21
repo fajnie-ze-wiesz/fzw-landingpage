@@ -21,6 +21,7 @@
     }
 
     #sekcja1, #sekcja2 {
+        width: 150%;
         .column {
             padding-right: 0;
         }
@@ -53,15 +54,15 @@
         flex-direction: row;
         img {
             align-self: flex-end;
-            width: 40%;
+            width: 60%;
             transform-origin: bottom left;
-            transform: scale(2);
+            // transform: scale(2);
 
         }
     }
 
     .column {
-      width: 60%;
+      width: 40%;
       padding: 4em;
     }
 
