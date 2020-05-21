@@ -24,7 +24,10 @@
         flex-direction: row-reverse;
         img {
             transform-origin: bottom;
-            transform: scale(1.4);
+            transform: scale(1.2);
+        }
+        .column {
+            width: 50%;
         }
     }
 
