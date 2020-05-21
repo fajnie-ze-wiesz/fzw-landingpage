@@ -43,6 +43,7 @@
     }
 
     .sekcja {
+        display: flex;
         flex-direction: row;
         padding: 0 calc((100vw - 1160px)/2);
         img {
