@@ -19,11 +19,20 @@
             margin-left: 2em;
         }
     }
+    #sekcja1 {
+        width: 150%;
+    }
 
     #sekcja1, #sekcja2 {
-        width: 150%;
         .column {
             padding-right: 0;
+        }
+    }
+
+    #sekcja2 {
+        width: 120%;
+        img {
+            width: 50%;
         }
     }
 
