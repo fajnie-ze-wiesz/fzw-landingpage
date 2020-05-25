@@ -28,7 +28,7 @@
     }
 
     #sekcja3 {
-        flex-direction: column;
+        display: block;
         .column {
             width: 100%;
         }
@@ -36,7 +36,6 @@
             width: 100%;
             padding: 0 4em;
             box-sizing: border-box;
-            align-self: auto;
         }
     }
 
