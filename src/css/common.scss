@@ -30,6 +30,12 @@ p {
     line-height: 1.75em;
 }
 
+p, h1, h2, h3 {
+  position: relative;
+  z-index: 1;
+
+}
+
 strong {
   font-weight: 500;
 }
