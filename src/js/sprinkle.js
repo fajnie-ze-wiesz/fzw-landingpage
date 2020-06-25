@@ -17,8 +17,7 @@ export function sprinkle(targetElement, {
     sprinkleElement.style.left = `${x}px`
     sprinkleElement.style.top = `${y}px`
 
-    sprinkleElement.animate([
-      {
+    sprinkleElement.animate([{
         transform: `rotate(0deg) translateY(0px) rotate(0deg)`
       },
       {
@@ -50,14 +49,14 @@ function randomPosition(element) {
 
 function createEllipse() {
   var svg = generateSVG()
-  
+
   var ellipse = document.createElementNS("http://www.w3.org/2000/svg", 'ellipse');
 
   ellipse.setAttribute("cx", "20");
   ellipse.setAttribute("cy", "20");
   ellipse.setAttribute("rx", "15");
   ellipse.setAttribute("ry", "15");
-  
+
   svg.appendChild(ellipse)
 
   return svg

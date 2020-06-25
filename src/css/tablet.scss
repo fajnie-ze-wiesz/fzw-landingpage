@@ -1,84 +1,89 @@
 @media screen and (min-aspect-ratio: 2/3) and (max-width: 1280px) {
-    body {
-        overflow-x: hidden;
-    }
-    h1 {
-        font-size: 260%;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    h2 {
-        font-size: 170%;
-    }
+  h1 {
+    font-size: 260%;
+  }
 
-    h3 {
-        font-size: 130%;
-    }
+  h2 {
+    font-size: 170%;
+  }
 
-    #header{
-        #logo {
-            margin-left: 2em;
-        }
-    }
-    #sekcja1 {
-        width: 150%;
-    }
+  h3 {
+    font-size: 130%;
+  }
 
-    #sekcja1, #sekcja2 {
-        .column {
-            padding-right: 0;
-        }
+  #header {
+    #logo {
+      margin-left: 2em;
     }
+  }
 
-    #sekcja2 {
-        width: 120%;
-        img {
-            width: 50%;
-        }
+  #sekcja1 {
+    width: 150%;
+  }
+
+  #sekcja1,
+  #sekcja2 {
+    .column {
+      padding-right: 0;
     }
+  }
 
-    #sekcja3 {
-        display: block;
-        .column {
-            width: 100%;
-        }
-        img {
-            width: 100%;
-            padding: 0 4em;
-            box-sizing: border-box;
-        }
+  #sekcja2 {
+    width: 120%;
+
+    img {
+      width: 50%;
     }
+  }
 
-    #sekcja4 {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-
-    .button + .button {
-        margin-left: 2em;
-    }
-
-    .sekcja {
-        display: flex;
-        flex-direction: row;
-        img {
-            align-self: flex-end;
-            width: 60%;
-            transform-origin: bottom left;
-            // transform: scale(2);
-
-        }
-    }
+  #sekcja3 {
+    display: block;
 
     .column {
-      width: 40%;
-      padding: 4em;
+      width: 100%;
     }
 
-    .contact-box {
-        margin: 4em;
-        box-sizing: content-box;
-        padding: 3em;
-        background-color: var(--gray);
+    img {
+      width: 100%;
+      padding: 0 4em;
+      box-sizing: border-box;
     }
+  }
 
+  #sekcja4 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .button + .button {
+    margin-left: 2em;
+  }
+
+  .sekcja {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      align-self: flex-end;
+      width: 60%;
+      transform-origin: bottom left;
+      // transform: scale(2);
+    }
+  }
+
+  .column {
+    width: 40%;
+    padding: 4em;
+  }
+
+  .contact-box {
+    margin: 4em;
+    box-sizing: content-box;
+    padding: 3em;
+    background-color: var(--gray);
+  }
 }
