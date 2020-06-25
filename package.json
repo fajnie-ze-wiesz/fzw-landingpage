@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.pug",
   "scripts": {
-    "dev": "parcel src/index.pug",
-    "build": "parcel build src/index.pug --public-url './'"
+    "dev": "parcel src/index.pug src/static/**/*",
+    "build": "parcel build src/index.pug src/static/**/* --public-url './'"
   },
   "repository": {
     "type": "git",
