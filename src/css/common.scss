@@ -155,10 +155,20 @@ a {
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   color: var(--gray-text);
-  text-align: center;
-  line-height: 3em;
   margin: 5vmin 0;
+
+  div.footer-item {
+    div {
+      font-size: 80%;
+      margin: 1em;
+    }
+    margin: 2em;
+    text-align: center;
+    line-height: 1em;
+  }
 }
 
 .round {
