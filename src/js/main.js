@@ -4,32 +4,36 @@ import {
 
 window.onload = () => {
   smoothScroll();
-  sprinkle(document.querySelector('h1'), {
-    sprinkleElements: null,
-    colors: [
-      // '#ef420c',
-      '#10305f',
-      '#ebf1f4',
-      // '#9dabbc'
-    ]
-  });
-  sprinkle(document.querySelector('#sekcja2 img'), {
-    sprinkleElements: null,
-    colors: [
-      '#ef420c',
-      '#10305f',
-      // '#ebf1f4',
-      '#9dabbc'
-    ]
-  });
-  sprinkle(document.querySelector('#sekcja4'), {
-    sprinkleElements: null,
-    colors: [
-      '#ef420c',
-      '#10305f',
-      '#9dabbc'
-    ]
-  });
+  // sprinkles();
+}
+
+function sprinkles() {
+    sprinkle(document.querySelector('h1'), {
+      sprinkleElements: null,
+      colors: [
+        // '#ef420c',
+        '#10305f',
+        '#ebf1f4',
+        // '#9dabbc'
+      ]
+    });
+    sprinkle(document.querySelector('#sekcja2 img'), {
+      sprinkleElements: null,
+      colors: [
+        '#ef420c',
+        '#10305f',
+        // '#ebf1f4',
+        '#9dabbc'
+      ]
+    });
+    sprinkle(document.querySelector('#sekcja4'), {
+      sprinkleElements: null,
+      colors: [
+        '#ef420c',
+        '#10305f',
+        '#9dabbc'
+      ]
+    });
 }
 
 function smoothScroll() {
