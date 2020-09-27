@@ -1,3 +1,3 @@
-# Nie daj się wkręcić w sieci
+# Nie daj się więcej &nbsp; wkręcić na fake newsy!
 
-Coraz więcej słyszysz o fake newsach, ale nie wiesz jak się przed nimi bronić? Naucz się tego z naszą **edukacyjną grą „Fajnie, że wiesz”**!
+Zagraj w edukacyjną grę przygotowaną przez zespół Demagog.org.pl i uodpornij się na fake newsy

@@ -1,5 +1,4 @@
-## Uodpornij się na „Fake Newsy”
+## Jak to działa?
 
-1.  Dzięki grze sprawdzisz swoją odporności na manipulacje w internecie oraz zdobędziesz umiejętności i wiedzę, która pomoże Ci krytycznie analizować treści.
-2.  Na podstawie 12 przykładów w czterech kategoriach tematycznych ocenisz czy treści z popularnych serwisów internetowych są prawdziwe lub fałszywe.
-3.  Przykłady zostały przygotowane przez zespół pogromców fake newsów z **[demagog.org.pl](https://demagog.org.pl)**!
+1.  Najpierw nauczymy Cię jak rozpoznawać fałszywe treści, konteksty, obrazy i clickbaity
+2.  A potem sprawdzisz się w quizie na prawdziwych przykładach z internetu w czterech kategoriach tematycznych
