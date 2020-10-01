@@ -17,44 +17,34 @@
 </head>
 
 <body>
-  <div id="sekcja1" class="sekcja">
-    <div class="column">
+  <div id="sekcja1" class="sekcja centerv padding">
       <img id="logo" src="assets/logo_web.svg" />
       <div class="text-box">
-        include:markdown-it text/sekcja1.md
+        include:markdown-it(html=true) text/sekcja1.md
       </div>
       <div class="button-container">
         <a class="button opaque-blue circle" href="#sekcja2">↓</a>
       </div>
-    </div>
   </div>
   <div id="sekcja2" class="sekcja">
-    <div class="round round-box">
-      <div class="column">
-        <div class="text-box">
+    <div class="round box greybg">
+      <div class="column padding">
           include:markdown-it text/sekcja2.md
           <div class="button-container">
-            <a class="button red" href="https://aplikacja.fajniezewiesz.pl/">Zaczynajmy!</a>
+            <a class="button red" href="https://aplikacja.fajniezewiesz.pl/">Tak, gramy!</a>
           </div>
-        </div>
       </div>
-      <div class="column">
         <img src="assets/Layer_9.png">
-      </div>
     </div>
   </div>
   <div id="sekcja3" class="sekcja">
-    <div class="column">
-      <div class="text-box">
+    <div class="column padding">
         include:markdown-it text/sekcja3.md
-      </div>
     </div>
-    <div class="column">
       <img class="round" src="assets/tomy.jpg" alt="">
-    </div>
   </div>
   <div id="sekcja4" class="sekcja">
-    <div class="round round-box">
+    <div class="round box greybg padding">
       <div class="text-box">
         include:markdown-it text/sekcja4.md
         <div class="button-container">
@@ -62,17 +52,24 @@
         </div>
       </div>
     </div>
-    <footer>
-      <div class="footer-item">
-        <div>Made with <img style="height: .8em;" src="assets/heart.svg" alt="love"> by</div>
-        <img style="height: 2.8em;" src="assets/logo_web.svg" />
-      </div>
-      <div class="footer-item">
-        <div>Powered by</div>
-        <a href="https://demagog.org.pl/"><img style="height: 1.5em;" src="assets/Demagog@2x.png" alt="Demagog"></a>
-      </div>
-    </footer>
+    <div class="padding centerv">
+        <h2>To jak, gramy?</h2>
+        <p>Zagraj w edukacyjną grę „Fajnie, że wiesz” i uodpornij się na fake newsy!</p>
+        <div class="button-container">
+          <a class="button red" href="https://aplikacja.fajniezewiesz.pl/">Ok, gramy!</a>
+        </div>
+    </div>
   </div>
+  <footer>
+      <div class="footer-item">
+          <div>Made with <img style="height: .8em;" src="assets/heart.svg" alt="love"> by</div>
+          <img style="height: 2.8em;" src="assets/logo_web.svg" />
+      </div>
+      <div class="footer-item">
+          <div>Powered by</div>
+          <a href="https://demagog.org.pl/"><img style="height: 1.5em;" src="assets/Demagog@2x.png" alt="Demagog"></a>
+      </div>
+  </footer>
 </body>
 
 </html>

@@ -1,0 +1,41 @@
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 260%;
+  }
+
+  h2 {
+    font-size: 170%;
+  }
+
+  h3 {
+    font-size: 130%;
+  }
+  #sekcja2 {
+      .box {
+          position: relative;
+          img {
+              height: 20%;
+              width: 20%;
+              align-self: flex-end;
+              
+              transform-origin: bottom right;
+              transform: scale(2.2);
+      }
+    }
+  }
+  .column {
+    width: 50%;
+  }
+  //
+  #sekcja3 {
+    img {
+        height: auto;
+        width: 50%;
+      align-self: auto;
+    }
+  }
+}

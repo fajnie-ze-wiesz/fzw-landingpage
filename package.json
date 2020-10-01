@@ -1,6 +1,6 @@
 {
   "name": "fzw-landing-page",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.pug",
   "scripts": {
@@ -19,10 +19,11 @@
   "homepage": "https://gitlab.com/fraunos/fzw-landing-page#readme",
   "dependencies": {
     "jstransformer-markdown-it": "^2.1.0",
-    "parcel": "^1.12.4"
+    "parcel": "nightly"
   },
   "devDependencies": {
-    "pug": "^2.0.4",
-    "sass": "^1.26.5"
+    "@babel/core": "^7.0.0",
+    "pug": "^3.0.0",
+    "sass": "^1.26.11"
   }
 }

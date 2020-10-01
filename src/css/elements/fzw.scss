@@ -25,6 +25,9 @@
   --primary-500: #4368a0;
   --primary-100: #d8e8ff;
   --accent-100: #feede7;
+  
+  font-family: "Rubik";
+  color: var(--blue);
 }
 
 .stroke-red {
@@ -39,18 +42,10 @@
   stroke: white;
 }
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  font-family: "Rubik";
-  overflow-x: hidden;
-  background-image: linear-gradient(var(--neutrals-200) 0 35%, white 30% 82%, var(--neutrals-200) 82% 100%);
-}
-
 .text-red {
   color: var(--red);
 }
+
 
 p {
   font-weight: 400;
@@ -77,56 +72,6 @@ h3 {
   line-height: 1.16em;
   font-weight: 700;
   margin: 0;
-}
-
-.sekcja {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-}
-
-#logo {
-  align-self: center;
-  transform: none;
-  width: 6em;
-  margin: 1em 0;
-  height: auto;
-}
-
-#sekcja1 {
-  text-align: center;
-  color: var(--blue);
-  justify-content: center;
-  .column {
-    align-items: center;
-  }
-  p {
-    font-size: 130%;
-  }
-}
-
-#sekcja2 {
-  color: var(--blue);
-  margin-bottom: 5vmin;
-}
-
-#sekcja3 {
-  color: var(--blue);
-
-  img {
-    transform: none;
-  }
-}
-
-#sekcja4 {
-  color: var(--blue);
-}
-
-a {
-  text-decoration: none;
-  color: var(--blue);
 }
 
 .button {
@@ -191,84 +136,6 @@ a {
   min-width: 0;
   padding: 0;
   border-radius: 100%;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  color: var(--gray-text);
-  margin: 5vmin 0;
-
-  div.footer-item {
-    div {
-      font-size: 80%;
-      margin: 1em;
-    }
-    margin: 2em;
-    text-align: center;
-    line-height: 1em;
-  }
-}
-
-#sekcja4 a {
-  font-weight: 500;
-  line-height: normal;
-}
-#sekcja4{
-  flex-direction: column;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  box-sizing: border-box;
-  img {
-    width: 100%;
-  }
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-
-ol {
-  list-style: none;
-  counter-reset: item;
-  padding: 0em;
-}
-
-li {
-  line-height: 1.5em;
-  margin: 2em 0;
-  counter-increment: item;
-  padding-left: 4em;
-}
-
-li:before {
-  font-size: 80%;
-  font-weight: bold;
-  content: counter(item);
-  background: var(--red);
-  border-radius: 100%;
-  color: white;
-  width: 1.9em;
-  height: auto;
-  margin-left: -4em;
-  margin-right: 2em;
-  text-align: center;
-  display: inline-block;
-}
-
-.round-box {
-  display: flex;
-  box-sizing: content-box;
-  background-color: var(--gray);
-}
-
-.round {
-  border-radius: 2em;
+  border-width: 1px;
+  box-shadow: inset 0 0 0 1px var(--neutrals-500);
 }
