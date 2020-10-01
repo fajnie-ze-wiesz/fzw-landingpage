@@ -2,10 +2,10 @@
   "name": "fzw-landing-page",
   "version": "2.0.0",
   "description": "",
-  "main": "index.pug",
+  "browser": "dist/index.html",
   "scripts": {
-    "dev": "parcel src/index.pug",
-    "build": "parcel build src/index.pug src/static/**/* --public-url './'"
+    "dev": "parcel serve src/index.pug",
+    "build": "parcel build src/index.pug --public-url './' --no-cache"
   },
   "repository": {
     "type": "git",
