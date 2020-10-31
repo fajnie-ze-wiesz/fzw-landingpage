@@ -13,7 +13,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 0 calc((100vw - 1450px) / 2);
   box-sizing: border-box;
 }
@@ -55,9 +55,13 @@ html {
 }
 
 #logo {
-  margin-bottom: 3em;
   height: 6em;
   width: auto;
+}
+
+.logoBox {
+    width: 50%;
+    margin-bottom: 3em;
 }
 
 #sekcja1 {
@@ -65,6 +69,12 @@ html {
   justify-content: space-around;
   p {
     font-size: 130%;
+  }
+  .button {
+      stroke: var(--blue);
+    &:hover svg {
+        stroke: white;
+    }
   }
 }
 

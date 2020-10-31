@@ -1,4 +1,4 @@
 ## Jak to działa?
 
-1.  Najpierw nauczymy Cię jak rozpoznawać fałszywe treści, konteksty, obrazy i clickbaity.
-2.  A potem sprawdzisz się w quizie na prawdziwych przykładach z internetu w czterech kategoriach tematycznych.
+1.  Poznaj kilka wskazówek, które pomogą Ci odróżnić fałszywe informacje od prawdziwych.
+2.  Sprawdź się! Wybierz kategorię tematyczną i zagraj w nasz quiz. Oceń co jest fake newsem na podstawie prawdziwych przykładów z internetu.

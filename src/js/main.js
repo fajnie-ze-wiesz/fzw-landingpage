@@ -4,32 +4,40 @@ import {
 
 window.onload = () => {
   smoothScroll();
-  // sprinkle(document.querySelector('h1'), {
-  //   sprinkleElements: null,
-  //   colors: [
-  //     // '#ef420c',
-  //     '#10305f',
-  //     '#ebf1f4',
-  //     // '#9dabbc'
-  //   ]
-  // });
-  // sprinkle(document.querySelector('#sekcja2 img'), {
-  //   sprinkleElements: null,
-  //   colors: [
-  //     '#ef420c',
-  //     '#10305f',
-  //     // '#ebf1f4',
-  //     '#9dabbc'
-  //   ]
-  // });
-  // sprinkle(document.querySelector('#sekcja4'), {
-  //   sprinkleElements: null,
-  //   colors: [
-  //     '#ef420c',
-  //     '#10305f',
-  //     '#9dabbc'
-  //   ]
-  // });
+  sprinkle(document.querySelector('.logoBox'), [document.querySelector('#logo')], {
+    sprinkleElements: null,
+    colors: [
+      '#ef420c',
+      '#10305f',
+      // '#ebf1f4',
+      // '#9dabbc',
+  ],
+    animate: false,
+    rotate: true
+  });
+  sprinkle(document.querySelector('#sekcja2 img'), [], {
+    sprinkleElements: null,
+    colors: [
+      '#ef420c',
+      '#10305f',
+      // '#ebf1f4',
+      // '#9dabbc',
+  ],
+    animate: false,
+    rotate: true
+  });
+  sprinkle(document.querySelector('#sekcja4 .box'), [document.querySelector('#sekcja4 .text-box')], {
+    sprinkleElements: null,
+    colors: [
+      '#ef420c',
+      '#10305f',
+      // '#ebf1f4',
+      // '#9dabbc',
+  ],
+    animate: false,
+    rotate: true
+  });
+
 }
 
 function smoothScroll() {
