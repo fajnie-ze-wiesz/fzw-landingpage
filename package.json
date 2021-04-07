@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "sass": "^1.26.11"
   }
 }
